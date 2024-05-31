@@ -1,2 +1,2 @@
-# python-and-statistics-for-financial-analysis
+# Python and statistics for Financial Analysis
 Coursera course
