@@ -47,6 +47,35 @@ HYPOTHESIS TESTING
 >
 >>if Ha:mu<0, it is lower tail test and  p-value=norm.cdf(z,0,1)
 
+LINEAR REGRESSION MODELS
+
+> Covariance: Degree of association between two or more random variables.
+
+> Correlation: Covariance is divided by the standard deviation of both variables. Now, the correlation will only take values in between negative one and one, no matter what are the variation of the two variables.
+ 
+> Covariance and correlation can only address linear pattern. There are quite a lot of quantitative measure for non-linear association.
+
+> Correlation only measures strength of association between two variables.
+
+> Variable user wants to estimate is called response and variables used to estimate response is called predictors.
+
+> We assume that response variable in population are all normal. They have equal variance sigma square. But in the mean of the response variable is determined by predictors. In linear form, mu_i equal to beta_0, plus beta_1, times X_i. Like in confidence interval estimation, we use the samples to estimate a population parameter, mu. Similarly, we also use samples to estimate parameters of population, beta_0, beta_1, sigma. In conclusion, if we apply linear regression model, we assume there exists such a real pattern in population. More specifically, linearity: The mean of y is linearly determined by predictors. Independence: With different X, responses are independent. Normality: The random noise and y follow normal distributions. Equal variance: The variance y are all equal even if the values of predictors are different.
+
+> Assumptions
+>> Independence
+>
+>> Linearity
+>
+>> Normality
+>
+>> Equal Variance
+
+VALIDATION AND DIAGNOSIS OF MODEL ASSUMPTIONS
+
+> Durbin Watson is that, there's no serial correlation in errors.
+
+>  We have a rule of thumb that test statistic values in the range of 1.5 and 2.5 are rated normal. If below 1.5, it maybe positively correlated. If above 2.5, it maybe negatively correlated, hence an assumption of independence is violated. For normality validation, we can use quantile - quantile plot or QQ plot. We use stats.probplot from python package scipy.stats to draw QQ plot. The first input of probplot is a standardized error. The second term dist = 'norm' is to compare your distribution of standardized error with normal distribution. If errors follow normal distribution, they will fall on the 45 degree line roughly. In our model, it deviates a bit in the right tail, but overall it satisfies the normality assumption. For equal variance, we can plot observed error versus predictor. If variance of noise is equal for different variance predictor, it should not have pattern. In our model, noise variance is smaller for houses with big numbers of rooms. Hence, assumption of equal variance is also violated.
+
 ---
 
 
