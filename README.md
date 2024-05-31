@@ -20,38 +20,4 @@ By the end of the course, you can achieve the following using python:
 
 Jupyter Notebook environment is configured in the course platform for practicing python coding without installing any client applications.
 
-# **Notes**
 
-
-> Relative frequency = Frequency / Total number of tries
-
-> Relative frequency becomes more stable with more number of tries.
-
-> For discrete variables, mean and variance can be calculated for probability distribution.
-
-> For continuous variables, are under the Probability Density function determines the probability.
-
-> VaR: Measure of how much a set of invstment might lose
-
-> ddof=1, provides an unbiased estimator(divides by n-1) while, ddof=0 provides maximum likelihood estimato(divides by n).
-
-> Degrees of freedom: Number of values in calculation that are free to variate.
-
-
----
-
-
-
-# **Useful Code snippets**
-
-> sort_index(): Sorts dataframes, series
-
-> sample(x, replace=true): This function of pandas does random sampling on a population. x is the number of samples required. Replace parameter is set to true for sampling with replacement and set to false for sampling without replacement.
-
-> shape(): Returns number of rows and columns.
-
-> mean(): Mean of sample/population.
-
-> std(ddof=1): Standard deviation of sample/population.
-
-> var(ddof=1): Variance of sample/population
